@@ -4,7 +4,7 @@ class PM {
 
 };
 
-class PMSingle {
+class PMSingle : public PM {
 	public:
 		virtual void match( const String& S, bool callBack (int) ) = 0;
 };

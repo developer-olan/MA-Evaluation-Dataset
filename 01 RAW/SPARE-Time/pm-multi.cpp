@@ -7,8 +7,8 @@ class PM {
 
 };
 
-class PMMultiple {
-public:
-	virtual void match( const String& S, bool callBack (int, const
-		std::set<String>&) ) = 0;
-};
+class PMMultiple : public PM{
+	public:
+		virtual void match( const String& S, bool callBack (int, const
+			std::set<String>&) ) = 0;
+	};
